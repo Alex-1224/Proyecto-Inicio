@@ -35,6 +35,17 @@ footer{
     animation-name: h1;
     animation-iteration-count: infinite;
 }
+@keyframes h1{
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 1;
+        }
+}
 .section1{
    display: grid;
    align-items: center;
@@ -53,12 +64,23 @@ h2{
     font-size: 2rem;
     padding: 10px;
 }
+.animate__tada{
+    display: inline-block;
+    animation: tada;
+    animation-duration: 4s;
+}
 .img1{
     width: 300px;
     border-radius: 20%;
     border-style: ridge;
     padding: 20px;
     margin: 20px;
+}
+.animate__bounce{
+    display: inline-block;
+    margin: 30px;
+    animation: bounce;
+    animation-duration: 4s;
 }
 .menu{
     display: flex;
@@ -85,6 +107,11 @@ h2{
     font-size: 1rem;
     text-decoration: none;
 }
+.menu li a:hover{
+    background-color: #8FE3CF;
+    color: #000000;
+    font-weight: bold;
+}
 /*</header>*/
 /*<main1>*/
 h3{
@@ -102,6 +129,14 @@ h3{
     border-style: groove;
     margin: 25px;
     transform: scale(0.9);
+}
+.div2 img:hover{
+    opacity: 1;
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
+    transform: scale(0.9);
+    transition: all 1s ease;
 }
 /*</main1>*/
 /*<main2>*/
@@ -188,6 +223,11 @@ h3{
     padding: 10px;
     margin: 30px;
 }
+.div3 a i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 2s ease;
+}
 .div4{
     margin: 30px;
 }
@@ -252,6 +292,14 @@ h5{
     .div2 img{
         opacity: .4;
         width: 370px;
+        padding: 20px;
+        border: 4px #00ffff ;
+        border-style: groove;
+        padding: 10px;
+    }
+    .div2 img:hover{
+        opacity: 1;
+        width: 400px;
         padding: 20px;
         border: 4px #00ffff ;
         border-style: groove;
